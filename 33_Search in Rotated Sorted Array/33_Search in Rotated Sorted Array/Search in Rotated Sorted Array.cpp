@@ -14,17 +14,16 @@ using namespace std;
 */
 int search(vector<int>& nums, int target)
 {
-	int length = nums.size();
 	int first = 0;
-	int last = length - 1;
+	int last = nums.size();
 	int mid = 0;
-	while (first <= last)
+	while (first != last)
 	{
 		mid = (first + last) / 2;
 		if (nums[mid] == target)
 			return mid;
 		//说明左半部分是递增的，没有受到旋转的影响
-		if (nums[first] < nums[mid])
+		if (nums[first] <= nums[mid])
 		{
 			if (nums[first] <= target && target < nums[mid])
 				last = mid;
@@ -34,7 +33,7 @@ int search(vector<int>& nums, int target)
 		//说明左半部分不是递增，右半部分是递增
 		else
 		{
-			if (nums[mid] < target && target < nums[last])
+			if (nums[mid] < target && target <= nums[last-1])
 				first = mid + 1;
 			else
 				last = mid;
@@ -45,7 +44,7 @@ int search(vector<int>& nums, int target)
 int main(void)
 {
 	vector<int> v = { 4,5,6,7,0,1,2 };
-	int result = search(v, 0);
+	int result = search(v, 3);
 	cout << result << endl;
 	system("pause");
 	return 0;

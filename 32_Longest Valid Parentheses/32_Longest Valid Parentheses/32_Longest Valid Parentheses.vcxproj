@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2B95A850-71D6-40D5-8A5D-25CA12FC4450}</ProjectGuid>
-    <RootNamespace>My96_UniqueBinarySearchTrees</RootNamespace>
+    <ProjectGuid>{406A4550-2CBF-4D77-BB44-1BECAE93A3A0}</ProjectGuid>
+    <RootNamespace>My32_LongestValidParentheses</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Unique Binary Search Trees.cpp" />
+    <ClCompile Include="Longest Valid Parentheses.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

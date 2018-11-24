@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sudoku Solver.cpp">
+    <ClCompile Include="Length of Last Word.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

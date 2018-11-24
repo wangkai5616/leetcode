@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sudoku Solver.cpp">
+    <ClCompile Include="Multiply Strings.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

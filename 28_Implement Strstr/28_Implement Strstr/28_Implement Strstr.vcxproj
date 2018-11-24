@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5E0689B8-B552-4F54-93B0-72B90F2F8125}</ProjectGuid>
-    <RootNamespace>My52_NQueensII</RootNamespace>
+    <ProjectGuid>{0BD0E426-2619-4A4C-8144-9094C885AFED}</ProjectGuid>
+    <RootNamespace>My28_ImplementStrstr</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="N-Queens.cpp" />
+    <ClCompile Include="Implement Strstr.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sudoku Solver.cpp">
+    <ClCompile Include="Group Anagrams.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

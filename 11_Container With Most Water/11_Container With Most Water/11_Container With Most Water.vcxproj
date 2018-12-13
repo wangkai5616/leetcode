@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C0C7DB80-5C29-4D67-8440-549083400233}</ProjectGuid>
-    <RootNamespace>My95_UniqueBinarySearchTreesii</RootNamespace>
+    <ProjectGuid>{71BBF806-D987-4A2E-BEE1-D0404A51A25A}</ProjectGuid>
+    <RootNamespace>My11_ContainerWithMostWater</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Unique Binary Search Trees ii.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

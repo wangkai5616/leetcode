@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{71BBF806-D987-4A2E-BEE1-D0404A51A25A}</ProjectGuid>
-    <RootNamespace>My11_ContainerWithMostWater</RootNamespace>
+    <ProjectGuid>{37B2F614-ABC5-4AB1-9CF0-E502A782E97E}</ProjectGuid>
+    <RootNamespace>My23_MergeKSortedLists</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Container With Most Water.cpp" />
+    <ClCompile Include="Merge K Sorted Lists.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

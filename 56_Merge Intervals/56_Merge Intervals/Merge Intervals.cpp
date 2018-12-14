@@ -17,27 +17,41 @@ struct Interval {
 	Interval() : start(0), end(0) {}
 	Interval(int s, int e) : start(s), end(e) {}
 };
+// 时间复杂度 O(n1+n2+...)空间复杂度 O(1)
 vector<Interval> merge(vector<Interval>& intervals)
 {
 	vector<Interval> result;
-	if (intervals.empty())
-		return result;
-	//将intervals中的元素按照start从小到大的顺序进行排序
-	sort(intervals.begin(), intervals.end(),
-		[](const Interval& i1, const Interval& i2) {return i1.start < i2.start; });
-	result.push_back(intervals[0]);
-	int cur = 0;
-	for (int i = 1; i < intervals.size(); ++i)
-	{
-		if (intervals[i].start > result[cur].end)
-		{
-			result.push_back(intervals[i]);
-			cur++;//cur始终保持result容器中最后一个元素的下标
-		}
-		else
-			result[cur].end = max(intervals[i].end, result[cur].end);
-	}
+	for (int i = 0; i < intervals.size(); ++i)
+		insert(result, intervals[i]);
 	return result;
+}
+//时间复杂度O(n)
+vector<Interval> insert(vector<Interval>& intervals, Interval newInterval)
+{
+	auto it = intervals.begin();
+	while (it != intervals.end())
+	{
+		//新来的newInterval的肯定大于it指向的值
+		if (newInterval.start > it->end)
+			it++;
+		//新来的newInterval的肯定大于it指向的值
+		//所以，找到了位置，进行插入
+		else if (newInterval.end < it->start)
+		{
+			intervals.insert(it, newInterval);
+			return intervals;
+		}
+		//新来的newInterval的和it指向的值进行合并，然后删除
+		//原来it指向的值，重新构造新来的newInterval
+		else
+		{
+			newInterval.start = min(newInterval.start, it->start);
+			newInterval.end = max(newInterval.end, it->end);
+			it = intervals.erase(it);
+		}
+	}
+	intervals.insert(intervals.end(), newInterval);
+	return intervals;
 }
 int main(void)
 {

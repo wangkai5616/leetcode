@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A029FAF0-CEA3-47CE-AA15-170F138D5026}</ProjectGuid>
-    <RootNamespace>My57_InsertInterval</RootNamespace>
+    <ProjectGuid>{CA86F8B1-46A4-4A56-B5BC-1EC75260AE70}</ProjectGuid>
+    <RootNamespace>My84_LargestRectangleinHistogram</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Insert Interval.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

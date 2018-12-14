@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8F071424-DE76-47ED-8E9B-6F4B386753E7}</ProjectGuid>
-    <RootNamespace>My36_ValidSudoku</RootNamespace>
+    <ProjectGuid>{6E878544-42D9-4257-8270-9AB99849C734}</ProjectGuid>
+    <RootNamespace>My56_MergeIntervals</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Valid Sudoku.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

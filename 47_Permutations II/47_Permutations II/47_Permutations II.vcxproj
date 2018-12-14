@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8F071424-DE76-47ED-8E9B-6F4B386753E7}</ProjectGuid>
-    <RootNamespace>My36_ValidSudoku</RootNamespace>
+    <ProjectGuid>{4B76611B-8ABD-48A5-B23E-9EBA41667E98}</ProjectGuid>
+    <RootNamespace>My47_PermutationsII</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Valid Sudoku.cpp" />
+    <ClCompile Include="Permutations II.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

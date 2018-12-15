@@ -1,6 +1,19 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
+/*
+给定一个可包含重复数字的序列，返回所有不重复的全排列。
+示例:
+输入: [1,1,2]
+输出:
+[
+[1,1,2],
+[1,2,1],
+[2,1,1]
+]
+*/
+//思路：46题的变形
 void permuteUnique(vector<vector<int>> &result,
 	vector<int> nums, int i);
 vector<vector<int>> permuteUnique(vector<int> nums)
@@ -12,6 +25,7 @@ vector<vector<int>> permuteUnique(vector<int> nums)
 void permuteUnique(vector<vector<int>> &result, 
 	vector<int> nums, int i)
 {
+	vector<int> v;//统计出现的元素的值
 	if (i == nums.size() - 1)
 	{
 		result.push_back(nums);
@@ -19,10 +33,12 @@ void permuteUnique(vector<vector<int>> &result,
 	}
 	for (int j = i; j < nums.size(); ++j)
 	{
-		if (j != i && nums[j] == nums[i])
+		//判断之前是否出现过该值
+		if (j != i && find(v.begin(),v.end(),nums[j])!=v.end())
 			continue;
 		else
 		{
+			v.push_back(nums[j]);
 			swap(nums[i], nums[j]);
 			permuteUnique(result, nums, i + 1);
 		}
@@ -40,7 +56,6 @@ void print(const vector<vector<int>> &v)
 int main(void)
 {
 	vector<int> v{ 3,3,0,3 };
-	
 	vector<vector<int>> result;
 	result = permuteUnique(v);
 	print(result);

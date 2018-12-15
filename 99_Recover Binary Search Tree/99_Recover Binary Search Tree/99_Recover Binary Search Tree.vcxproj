@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{516A9A63-FB2B-4379-9103-8F821E3E34DF}</ProjectGuid>
-    <RootNamespace>My98_ValidateBinarySearchTree</RootNamespace>
+    <ProjectGuid>{B03944D5-B37A-4D36-B810-E256A210D3CD}</ProjectGuid>
+    <RootNamespace>My99_RecoverBinarySearchTree</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Validate Binary Search Tree.cpp" />
+    <ClCompile Include="Recover Binary Search Tree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

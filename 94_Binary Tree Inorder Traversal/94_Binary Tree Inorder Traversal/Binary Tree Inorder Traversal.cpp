@@ -2,6 +2,7 @@
 #include<vector>
 #include<stack>
 using namespace std;
+//给定一个二叉树，返回它的中序 遍历。
 struct TreeNode {
 	int val;
 	TreeNode *left;

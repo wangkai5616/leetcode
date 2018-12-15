@@ -10,7 +10,7 @@ int lengthOfLongestSubstring(string s)
 {
 	int curLength = 0;
 	int maxLength = 0;
-	map<char, int> m;
+	map<char, int> m;//字符及其对应的下标
 	for (int i = 0; i < s.length(); ++i)
 	{
 		/*

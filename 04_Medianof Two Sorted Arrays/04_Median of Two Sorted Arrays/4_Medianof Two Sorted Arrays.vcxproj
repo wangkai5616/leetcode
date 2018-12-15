@@ -22,6 +22,7 @@
     <ProjectGuid>{50B464C3-359E-4548-B1E3-B875E925F37D}</ProjectGuid>
     <RootNamespace>My4_MedianofTwoSortedArrays</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>4_Median of Two Sorted Arrays</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -118,7 +119,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Medianof Two Sorted Arrays.cpp" />
+    <ClCompile Include="Median of Two Sorted Arrays.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

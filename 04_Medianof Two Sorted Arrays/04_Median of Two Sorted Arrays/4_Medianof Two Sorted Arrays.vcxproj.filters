@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Medianof Two Sorted Arrays.cpp">
+    <ClCompile Include="Median of Two Sorted Arrays.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

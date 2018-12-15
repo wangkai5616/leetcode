@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{CA86F8B1-46A4-4A56-B5BC-1EC75260AE70}</ProjectGuid>
-    <RootNamespace>My84_LargestRectangleinHistogram</RootNamespace>
+    <ProjectGuid>{1C4EEFED-04C3-4F81-B409-4F62C2636BCC}</ProjectGuid>
+    <RootNamespace>My89_GrayCode</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Largest Rectangle in Histogram.cpp" />
+    <ClCompile Include="Gray Code.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

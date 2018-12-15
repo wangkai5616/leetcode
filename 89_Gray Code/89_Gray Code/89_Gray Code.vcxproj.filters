@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Largest Rectangle in Histogram.cpp">
+    <ClCompile Include="Gray Code.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

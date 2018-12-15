@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6E878544-42D9-4257-8270-9AB99849C734}</ProjectGuid>
-    <RootNamespace>My56_MergeIntervals</RootNamespace>
+    <ProjectGuid>{CAF08C35-6BDF-4B53-B5A1-CA9C24B26166}</ProjectGuid>
+    <RootNamespace>My100_SameTree</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Merge Intervals.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

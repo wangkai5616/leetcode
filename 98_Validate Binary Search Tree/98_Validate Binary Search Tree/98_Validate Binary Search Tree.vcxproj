@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{21397F0C-A333-4147-82C9-EEF86C6B955C}</ProjectGuid>
-    <RootNamespace>My94_BinaryTreeInorderTraversal</RootNamespace>
+    <ProjectGuid>{516A9A63-FB2B-4379-9103-8F821E3E34DF}</ProjectGuid>
+    <RootNamespace>My98_ValidateBinarySearchTree</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Binary Tree Inorder Traversal.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

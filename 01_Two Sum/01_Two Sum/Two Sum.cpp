@@ -12,16 +12,17 @@ using namespace std;
 vector<int> twoSum1(vector<int>& nums, int target)
 {
 	vector<int> v;
-	for (int i = 0; i < nums.size() - 1; ++i)
+	for (int i = 0; i < nums.size(); ++i)
 	{
-		if (nums[i] + nums[i + 1] == target)
+		for (int j = i + 1; j < nums.size(); ++j)
 		{
-			v.push_back(nums[i]);
-			v.push_back(nums[i + 1]);
-			return v;
+			if (nums[i] + nums[j] == target)
+			{
+				v.push_back(i);
+				v.push_back(j);
+				return v;
+			}
 		}
-		else
-			i++;
 	}
 	return v;
 }
@@ -41,8 +42,8 @@ vector<int> twoSum2(vector<int>& nums, int target)
 		int temp = target - nums[i];
 		if (map.find(temp) != map.end() && map[temp] != i)
 		{
-			v.push_back(nums[i]);
-			v.push_back(temp);
+			v.push_back(map[nums[i]]);
+			v.push_back(map[temp]);
 			return v;
 		}
 	}
@@ -63,8 +64,8 @@ vector<int> twoSum3(vector<int>& nums, int target)
 		int temp = target - nums[i];
 		if (map.find(temp) != map.end() && map[temp] != i)
 		{
-			v.push_back(nums[i]);
-			v.push_back(temp);
+			v.push_back(map[nums[i]]);
+			v.push_back(map[temp]);
 			return v;
 		}
 	}
@@ -72,8 +73,8 @@ vector<int> twoSum3(vector<int>& nums, int target)
 }
 int main(void)
 {
-	vector<int> v{ 2,47,32,4,9 };
-	vector<int> result = twoSum3(v, 11);
+	vector<int> v{ 2,7,11,15 };
+	vector<int> result = twoSum2(v, 9);
 	for (auto i : result)
 		cout << i << " ";
 	cout << endl;

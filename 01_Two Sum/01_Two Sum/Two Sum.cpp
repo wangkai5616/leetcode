@@ -1,6 +1,7 @@
 #define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 #include<iostream>
 #include<vector>
+#include<map>
 #include<hash_map>
 using namespace std;
 /*
@@ -57,10 +58,12 @@ vector<int> twoSum2(vector<int>& nums, int target)
 vector<int> twoSum3(vector<int>& nums, int target)
 {
 	vector<int> v;
-	hash_map<int, int> map;
+	multimap<int, int> map;
 	for (int i = 0; i < nums.size(); ++i)
 	{
 		map[nums[i]] = i;
+		//multimap的插入只能用insert()不能用数组
+		map.insert(nums[i], i);
 		int temp = target - nums[i];
 		if (map.find(temp) != map.end() && map[temp] != i)
 		{
@@ -73,8 +76,8 @@ vector<int> twoSum3(vector<int>& nums, int target)
 }
 int main(void)
 {
-	vector<int> v{ 2,7,11,15 };
-	vector<int> result = twoSum2(v, 9);
+	vector<int> v{ 3,3 };
+	vector<int> result = twoSum3(v, 6);
 	for (auto i : result)
 		cout << i << " ";
 	cout << endl;

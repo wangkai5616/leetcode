@@ -35,6 +35,11 @@ vector<vector<int>> threeSum(vector<int>& nums)
 		}
 	}
 	sort(result.begin(), result.end());
+	/*
+	unique并不会改变[first,last)的元素个数，有一些残留数据会留下来。可以用
+	erase函数去除。
+	unique会返回一个迭代器指向新区间的尾端，新区间之内不含相邻的重复元素
+	*/
 	result.erase(unique(result.begin(), result.end()), result.end());
 	return result;
 }

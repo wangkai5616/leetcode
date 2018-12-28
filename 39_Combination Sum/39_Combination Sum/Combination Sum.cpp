@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 void BackTrace(vector<vector<int>> &result, vector<int> &v, vector<int> candidates,
-	int target, int remain, int begin);
+	 int target, int remain, int begin);
 vector<vector<int>> combinationSum(vector<int>& candidates, int target)
 {
 	vector<vector<int>> result;

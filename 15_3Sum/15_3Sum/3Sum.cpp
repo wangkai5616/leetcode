@@ -4,7 +4,8 @@
 using namespace std;
 void print(const vector<vector<int>> &v);
 /*
-先排好序，然后左右加逼，复杂度为O(n^2)
+先排好序，从头至尾，先固定一个元素，然后求解剩下的两个
+元素是通过左右加逼得到的，复杂度为O(n^2)
 */
 vector<vector<int>> threeSum(vector<int>& nums)
 {

@@ -30,6 +30,11 @@ void nextPermutation(vector<int>& nums)
 		}
 	}
 	swap(nums[k], nums[l]);
+	/*
+	当初找到的k，说明的是,从k往后的元素是从大到小排列，经过
+	swap之后依然是从大到小，我们应该弄成从小到大，因为是找第一个
+	排列大于题给定的序列
+	*/
 	reverse(nums.begin() + k + 1, nums.end());
 }
 int main(void)

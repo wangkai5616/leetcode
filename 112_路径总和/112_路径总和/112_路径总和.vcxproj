@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A1A189EC-350A-4FF6-9580-6D913CAB6CEC}</ProjectGuid>
-    <RootNamespace>My111_二叉树的最小深度</RootNamespace>
+    <ProjectGuid>{5319ABC0-A355-41FF-AD96-3922DBC1D246}</ProjectGuid>
+    <RootNamespace>My112_路径总和</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="二叉树的最小深度.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

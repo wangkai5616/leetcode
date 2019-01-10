@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5319ABC0-A355-41FF-AD96-3922DBC1D246}</ProjectGuid>
-    <RootNamespace>My112_路径总和</RootNamespace>
+    <ProjectGuid>{839EEFD4-325E-408B-AB51-1742F36D02BF}</ProjectGuid>
+    <RootNamespace>My113_路径总和II</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="路径总和.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

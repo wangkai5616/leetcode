@@ -14,6 +14,7 @@ using namespace std;
 15   7
 返回它的最小深度  2.
 */
+
 struct TreeNode {
 	int val;
 	TreeNode *left;

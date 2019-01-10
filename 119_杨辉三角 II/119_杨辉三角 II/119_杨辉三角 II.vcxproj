@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BD07765E-C984-4D62-A13B-F6A9B1B44DEA}</ProjectGuid>
-    <RootNamespace>My118_杨辉三角</RootNamespace>
+    <ProjectGuid>{C2BDF625-2955-47E1-915D-526ADB804C69}</ProjectGuid>
+    <RootNamespace>My119_杨辉三角II</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="杨辉三角.cpp" />
+    <ClCompile Include="119. 杨辉三角 II.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

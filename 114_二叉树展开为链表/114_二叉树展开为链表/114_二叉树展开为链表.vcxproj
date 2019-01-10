@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{839EEFD4-325E-408B-AB51-1742F36D02BF}</ProjectGuid>
-    <RootNamespace>My113_路径总和II</RootNamespace>
+    <ProjectGuid>{863C2326-B851-4348-A479-3AA4CDE5CF5A}</ProjectGuid>
+    <RootNamespace>My114_二叉树展开为链表</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="路径总和 II.cpp" />
+    <ClCompile Include="二叉树展开为链表.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

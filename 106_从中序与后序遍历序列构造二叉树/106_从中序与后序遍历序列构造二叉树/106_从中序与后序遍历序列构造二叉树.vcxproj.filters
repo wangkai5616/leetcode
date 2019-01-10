@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Symmetric Tree.cpp">
+    <ClCompile Include="从中序与后序遍历序列构造二叉树.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

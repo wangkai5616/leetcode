@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9E04FF4C-27A8-4ACA-AF0B-3E70EE282D13}</ProjectGuid>
-    <RootNamespace>My101_SymmetricTree</RootNamespace>
+    <ProjectGuid>{2C10F0F4-3ADF-4633-AA68-4F60D4C31975}</ProjectGuid>
+    <RootNamespace>My104_MaximumDepthofBinaryTree</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Symmetric Tree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

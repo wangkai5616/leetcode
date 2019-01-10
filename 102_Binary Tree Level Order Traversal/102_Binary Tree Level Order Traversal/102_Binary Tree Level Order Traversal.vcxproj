@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9E04FF4C-27A8-4ACA-AF0B-3E70EE282D13}</ProjectGuid>
-    <RootNamespace>My101_SymmetricTree</RootNamespace>
+    <ProjectGuid>{F985A30E-5BD1-4AB4-A9DE-BF41E7FAE67F}</ProjectGuid>
+    <RootNamespace>My102_BinaryTreeLevelOrderTraversal</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Symmetric Tree.cpp" />
+    <ClCompile Include="Binary Tree Level Order Traversal.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

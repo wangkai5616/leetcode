@@ -32,7 +32,7 @@ int maxProfit(vector<int>& prices)
 	//统计哪一天的最大利润最大
 	int max_profit = 0;
 	for (int i = 0; i < n; ++i)
-		max_profit = (max_profit, v1[i] + v2[i]);
+		max_profit = max(max_profit, v1[i] + v2[i]);
 	return max_profit;
 }
 int main(void)

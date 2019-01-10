@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{385D4E36-5233-4A3E-9BA8-21099519742A}</ProjectGuid>
-    <RootNamespace>My116_填充同一层的兄弟节点</RootNamespace>
+    <ProjectGuid>{AD3D84EE-7522-4005-9949-4BF5AFCAA474}</ProjectGuid>
+    <RootNamespace>My121_买卖股票的最佳时机</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="填充同一层的兄弟节点.cpp" />
+    <ClCompile Include="121. 买卖股票的最佳时机.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

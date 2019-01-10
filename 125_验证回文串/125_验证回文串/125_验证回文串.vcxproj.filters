@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="二叉树中的最大路径和.cpp">
+    <ClCompile Include="验证回文串.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

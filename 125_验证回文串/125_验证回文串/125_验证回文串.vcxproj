@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D7ECD5D9-20E2-4E17-9586-00AF8C9DFAAB}</ProjectGuid>
-    <RootNamespace>My124_二叉树中的最大路径和</RootNamespace>
+    <ProjectGuid>{6A515236-2D2A-479F-80BB-B68B013CC6B1}</ProjectGuid>
+    <RootNamespace>My125_验证回文串</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="二叉树中的最大路径和.cpp" />
+    <ClCompile Include="验证回文串.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{861557E2-662E-4AF4-82AD-F633E3F19B47}</ProjectGuid>
-    <RootNamespace>My107_二叉树的层次遍历II</RootNamespace>
+    <ProjectGuid>{A1A189EC-350A-4FF6-9580-6D913CAB6CEC}</ProjectGuid>
+    <RootNamespace>My111_二叉树的最小深度</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="二叉树的层次遍历 II.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

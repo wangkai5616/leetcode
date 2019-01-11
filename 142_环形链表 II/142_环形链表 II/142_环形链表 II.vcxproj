@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{08A0842F-B222-44F9-B9C9-31B12F8DC918}</ProjectGuid>
-    <RootNamespace>My137_只出现一次的数字II</RootNamespace>
+    <ProjectGuid>{33C27804-BEBE-4C4B-90E6-B1354F9DC6D8}</ProjectGuid>
+    <RootNamespace>My142_环形链表II</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="只出现一次的数字 II.cpp" />
+    <ClCompile Include="环形链表 II.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

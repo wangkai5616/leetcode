@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0E053DDA-8FA8-4205-BA52-7A1F1B2F1F93}</ProjectGuid>
-    <RootNamespace>My129_求根到叶子节点数字之和</RootNamespace>
+    <ProjectGuid>{E2201D78-1C9B-49AD-B7A2-9C7F94DEC495}</ProjectGuid>
+    <RootNamespace>My147_对链表进行插入排序</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="求根到叶子节点数字之和.cpp" />
+    <ClCompile Include="对链表进行插入排序.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

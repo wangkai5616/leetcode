@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9C1962E0-E5FC-4BAF-8A5B-394D5B1F411C}</ProjectGuid>
-    <RootNamespace>My139_单词拆分</RootNamespace>
+    <ProjectGuid>{09DF807B-94B1-49DA-9AE2-E50A1CBCB7D3}</ProjectGuid>
+    <RootNamespace>My143_重排链表</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="单词拆分.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

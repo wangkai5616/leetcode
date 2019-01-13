@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8CE02AAE-0770-45F0-AECC-D79E12C9B078}</ProjectGuid>
-    <RootNamespace>My150_逆波兰表达式求值</RootNamespace>
+    <ProjectGuid>{DA67C64D-5035-4742-B2A5-64F58E56F67F}</ProjectGuid>
+    <RootNamespace>My120_三角形最小路径和</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="逆波兰表达式求值.cpp" />
+    <ClCompile Include="三角形最小路径和.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

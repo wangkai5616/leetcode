@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="重排链表.cpp">
+    <ClCompile Include="最长连续序列.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

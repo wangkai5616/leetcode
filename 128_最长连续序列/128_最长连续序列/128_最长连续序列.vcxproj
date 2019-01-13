@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{09DF807B-94B1-49DA-9AE2-E50A1CBCB7D3}</ProjectGuid>
-    <RootNamespace>My143_重排链表</RootNamespace>
+    <ProjectGuid>{87C9C4A2-96CF-4352-A843-C0A323B861D6}</ProjectGuid>
+    <RootNamespace>My128_最长连续序列</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="重排链表.cpp" />
+    <ClCompile Include="最长连续序列.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

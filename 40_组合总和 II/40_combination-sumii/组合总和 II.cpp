@@ -32,6 +32,7 @@ void BackTrace(vector<vector<int>> &result, vector<int> &v, vector<int> candidat
 	{
 		for (int i = begin; i < candidates.size(); ++i)
 		{
+			//以i-1开始的，包含i或者不包含i的都计算过了，所以避免重复，i就不用进行计算了
 			if (i > begin && candidates[i] == candidates[i - 1])
 				continue;
 			v.push_back(candidates[i]);
@@ -57,8 +58,8 @@ void print(const vector<vector<int>> &v)
 }
 int main(void)
 {
-	vector<int> v = { 1,1,1,1 };
-	vector<vector<int>> result = combinationSum2(v, 3);
+	vector<int> v = { 2,2,2,2,4 };
+	vector<vector<int>> result = combinationSum2(v, 6);
 	print(result);
 	system("pause");
 	return 0;

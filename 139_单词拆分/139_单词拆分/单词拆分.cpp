@@ -3,7 +3,7 @@
 #include<unordered_set>
 #include<string>
 using namespace std;
-// 动态规划，时间复杂度 O(n^2)，空间复杂度 O(n)
+//动态规划，时间复杂度 O(n^2)，空间复杂度 O(n)
 bool wordBreak(string s, vector<string>& wordDict) 
 {
 	// 长度为 n 的字符串有 n+1 个隔板

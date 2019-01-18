@@ -8,15 +8,18 @@ int climbStairs(int n)
 {
 	if (n < 1)
 		return 0;
-	int prev = 0;
-	int cur = 1;
-	for (int i = 1; i <= n; ++i)
-	{
-		int temp = cur;
-		cur += prev;
-		prev = temp;
-	}
-	return cur;
+	if (n == 1)
+		return 1;
+	if (n == 2)
+		return 2;
+	int *nums = new int[n + 1];
+	nums[0] = 0;
+	nums[1] = 1;
+	nums[2] = 2;
+	int i = 0;
+	for (i = 3; i <= n; ++i)
+		nums[i] = nums[i - 1] + nums[i - 2];
+	return nums[i - 1];
 }
 int main(void)
 {

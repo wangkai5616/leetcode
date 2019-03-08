@@ -25,6 +25,7 @@ double myPowCore(double x, int n)
 }
 int main(void)
 {
+
 	system("pause");
 	return 0;
 }

@@ -19,6 +19,7 @@ int reverse(int x) {
 }
 int main(void)
 {
+
 	int result = reverse(234);
 	cout << result << endl;
 	system("pause");

@@ -32,6 +32,7 @@ vector<vector<int>> fourSum(vector<int>& nums, int target)
 			}
 		}
 	}
+	//必须先排序，因为unique只判断临近的
 	sort(result.begin(), result.end());
 	result.erase(unique(result.begin(), result.end()), result.end());
 	return result;

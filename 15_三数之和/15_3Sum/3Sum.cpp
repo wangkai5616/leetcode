@@ -35,6 +35,7 @@ vector<vector<int>> threeSum(vector<int>& nums)
 			}
 		}
 	}
+	//必须要先排序，因为unique只判断临近的
 	sort(result.begin(), result.end());
 	/*
 	unique并不会改变[first,last)的元素个数，有一些残留数据会留下来。可以用

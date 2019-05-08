@@ -7,7 +7,7 @@ using namespace std;
 给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。
 */
 //递归版本，时间复杂度为O(3^n)，空间复杂度为O(n)
-void dfs(const string &digits, size_t cur, string path,
+void dfs(const string &digits, size_t cur, string &path,
 	vector<string> &result, const vector<string> &keyboard);
 vector<string> letterCombinations(string digits)
 {
@@ -15,11 +15,12 @@ vector<string> letterCombinations(string digits)
 	vector<string> result;
 	if (digits.empty())
 		return result;
-	dfs(digits, 0, "", result, keyboard);
+	string path = "";
+	dfs(digits, 0, path, result, keyboard);
 	return result;
 }
-void dfs(const string &digits, size_t cur, string path,
-	vector<string> &result,const vector<string> &keyboard)
+void dfs(const string &digits, size_t cur, string &path,
+	vector<string> &result, const vector<string> &keyboard)
 {
 	if (cur == digits.size())
 	{
@@ -27,7 +28,11 @@ void dfs(const string &digits, size_t cur, string path,
 		return;
 	}
 	for (auto i : keyboard[digits[cur] - '0'])
-		dfs(digits, cur + 1, path + i, result, keyboard);
+	{
+		path.push_back(i);
+		dfs(digits, cur + 1, path, result, keyboard);
+		path.pop_back();
+	}
 }
 int main(void)
 {

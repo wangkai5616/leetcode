@@ -42,11 +42,7 @@ void BackTrace(vector<vector<int>> &result, vector<int> &v, vector<int> candidat
 		}
 	}
 }
-/*
-sort(result.begin(), result.end());
-result.erase(unique(result.begin(), result.end()), result.end());
-return result;
-*/
+
 void print(const vector<vector<int>> &v)
 {
 	for (int i = 0; i < v.size(); ++i)

@@ -1,5 +1,7 @@
 #include<iostream>
 #include<vector>
+#include<list>
+#include<algorithm>
 using namespace std;
 //合并 k 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。
 
@@ -46,6 +48,28 @@ ListNode* mergeTwoLists(ListNode* l1, ListNode* l2)
 	else
 		node->next = l1;
 	return head->next;
+}
+//方法二,将将元素都先放到容器中，然后构造一个链表
+ListNode* mergeKLists(vector<ListNode*>&lists)
+{
+	ListNode* result = new ListNode(-1);
+	ListNode* point = result;
+	vector<int> l;
+	for (int i = 0; i<lists.size(); i++)
+	{
+		while (lists[i])
+		{
+			l.push_back(lists[i]->val);
+			lists[i] = lists[i]->next;
+		}
+	}
+	sort(l.begin(),l.end());
+	for (vector<int>::iterator it = l.begin(); it != l.end(); it++)
+	{
+		point->next = new ListNode(*it);
+		point = point->next;
+	}
+	return result->next;
 }
 int main(void)
 {

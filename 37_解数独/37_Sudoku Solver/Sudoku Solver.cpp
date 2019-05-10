@@ -31,6 +31,7 @@ bool solveSudoku1(vector<vector<char>>& board)
 				return false;
 			}
 		}
+	return true;
 }
 //¼ì²â(x,y)ÊÇ·ñºÏ·¨
 bool IsValid(const vector<vector<char>>& board, int x, int y)

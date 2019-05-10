@@ -14,6 +14,7 @@ using namespace std;
 说明:
 假设你总是可以到达数组的最后一个位置。
 */
+//时间复杂度(n),空间复杂度O(1)
 int jump(vector<int>& nums)
 {
 	const int length = nums.size();

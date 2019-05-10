@@ -1,34 +1,40 @@
 #include<iostream>
+#include<vector>
 #include<stack>
 #include<string>
 #include<algorithm>
 using namespace std;
-int longestValidParentheses(string s)
+int search(vector<int>& nums, int target)
 {
-	int curLength = 0;
-	int maxLength = 0;
-	stack<int> si;
-	int last = -1;
-	for (int i = 0; i < s.size(); ++i)
+	int begin = 0;
+	int end = nums.size() - 1;
+	int k = 0;
+	while (begin <= end)
 	{
-		if (s[i] == '(')
-			si.push(i);
+		k = (begin + end) / 2;
+		if (nums[k] == target)
+			return k;
+		else if (nums[begin] < nums[k])
+		{
+			if (target < nums[k])
+				end = k - 1;
+			else
+				begin = k + 1;
+		}
 		else
 		{
-			if (si.empty())
-				last = i;
+			if (target > nums[k])
+				begin = k + 1;
 			else
-			{
-				si.pop();
-				if(si.empty())
-					maxLength=
-			}
-		}
+				end = k - 1;
+		}			
 	}
+	return -1;
 }
 int main(void)
 {
-
+	vector<int> v = { 4,5,6,7,0,1,2 };
+	cout << search(v, 0) << endl;
 	system("pause");
 	return 0;
 }

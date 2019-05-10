@@ -4,29 +4,32 @@
 #include<string>
 #include<algorithm>
 using namespace std;
-double myPow(double x, int n)
+bool isValidSudoku(vector<vector<char>>& board)
 {
-	if (n == 0)
-		return 1;
-	if (n == 1)
-		return x;
-	if (n == -1)
-		return 1 / x;
-	int index = 0;
-	if (n < 0)
+	for (int i = 0; i < board.size(); ++i)
 	{
-		index = 1;
-		n = -n;
+		for (int j = 0; j < board[0].size(); ++j)
+		{
+			if (!isValidSudokuCore(board, i, j))
+				return false;
+		}
 	}
-	double k = myPow(x, n / 2);
-	double result = 0;
-	if (n % 2 == 1)
-		result = k*k*x;
-	else
-		result = k*k;
-	if (index>0)
-		result = 1 / result;
-	return result;
+}
+bool isValidSudokuCore(vector<vector<char>>& board,int m,int n)
+{
+	for (int i = 0; i < board.size(); ++i)
+		if (board[i][n] == board[m][n] && i != m)
+			return false;
+	for (int i = 0; i < board[0].size(); ++i)
+		if (board[m][i] == board[m][n] && n != i)
+			return false;
+	for (int i =3* (m / 3); i < 3*(m / 3 + 1); ++i)
+	{
+		for (int j = n / 3; j < n / 3 + 1; ++j)
+		{
+
+		}
+	}
 }
 int main(void)
 {

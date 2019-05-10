@@ -20,6 +20,7 @@ using namespace std;
 交换为止，终止条件是 A[i]== A[A[i]-1]。
 */
 void bucket_sort(vector<int>& nums, int n);
+//时间复杂度O(n)，空间复杂度O(1)
 int firstMissingPositive(vector<int>& nums)
 {
 	int n = nums.size();

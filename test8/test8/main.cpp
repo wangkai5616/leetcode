@@ -1,15 +1,19 @@
 #include<iostream>
 #include<string>
 using namespace std;
-int strStr(string haystack, string needle)
+int divide(int dividend, int divisor)
 {
-	if (needle.size() == 0)
-		return 0;
-	if (haystack.size() == 0)
-		return -1;
-	for (int i = 0; i < haystack.size(); ++i)
+	long long a = dividend > 0 ? dividend : -(long long)dividend;
+	long long b = divisor > 0 ? dividend : -(long long)dividend;
+	long long result = 0;
+	while (a > b)
 	{
-
+		long long c = b;
+		for (int i = 0; a >= c; ++i, c << 1)
+		{
+			a -= c;
+			result += 1 << i;
+		}
 	}
 }
 

@@ -12,6 +12,7 @@ using namespace std;
 int divide(int dividend, int divisor)
 {
 	// 当 dividend = INT_MIN 时，-dividend 会溢出，所以用 long long
+	//也就是说-INT_MIN/-1,转为正数之后就会溢出
 	long long a = dividend >= 0 ? dividend : -(long long)dividend;
 	long long b = divisor >= 0 ? divisor : -(long long)divisor;
 	// 当 dividend = INT_MIN 时，divisor = -1 时，结果会溢出，所以用 long long

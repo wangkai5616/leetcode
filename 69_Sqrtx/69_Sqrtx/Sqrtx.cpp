@@ -14,9 +14,10 @@ int mySqrt(int x)
 	int end = x / 2;
 	while (start <= end)
 	{
+		//long long还是有必要的，因为你是从二分之一出开始平方，可能超过最大值
 		long long mid = (start + end) / 2;
 		long long sq = mid*mid;
-		if (mid == x)
+		if (sq == x)
 			return mid;
 		else if (sq > x)
 			end = mid - 1;

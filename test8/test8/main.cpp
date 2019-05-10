@@ -4,37 +4,33 @@
 #include<string>
 #include<algorithm>
 using namespace std;
-int search(vector<int>& nums, int target)
+double myPow(double x, int n)
 {
-	int begin = 0;
-	int end = nums.size() - 1;
-	int k = 0;
-	while (begin <= end)
+	if (n == 0)
+		return 1;
+	if (n == 1)
+		return x;
+	if (n == -1)
+		return 1 / x;
+	int index = 0;
+	if (n < 0)
 	{
-		k = (begin + end) / 2;
-		if (nums[k] == target)
-			return k;
-		else if (nums[begin] < nums[k])
-		{
-			if (target < nums[k])
-				end = k - 1;
-			else
-				begin = k + 1;
-		}
-		else
-		{
-			if (target > nums[k])
-				begin = k + 1;
-			else
-				end = k - 1;
-		}			
+		index = 1;
+		n = -n;
 	}
-	return -1;
+	double k = myPow(x, n / 2);
+	double result = 0;
+	if (n % 2 == 1)
+		result = k*k*x;
+	else
+		result = k*k;
+	if (index>0)
+		result = 1 / result;
+	return result;
 }
 int main(void)
 {
-	vector<int> v = { 4,5,6,7,0,1,2 };
-	cout << search(v, 0) << endl;
+	cout << myPow(2, -1) << endl;
 	system("pause");
 	return 0;
 }

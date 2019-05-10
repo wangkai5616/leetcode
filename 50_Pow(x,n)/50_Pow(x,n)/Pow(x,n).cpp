@@ -7,7 +7,11 @@ double myPowCore(double x, int n);
 double myPow(double x, int n)
 {
 	if (n < 0)
+	{
+		if(n==INT_MIN)
+			return 1.0 / (myPowCore(x, INT_MAX)*x);
 		return 1.0 / myPowCore(x, -n);
+	}
 	else
 		return myPowCore(x, n);
 }
@@ -25,7 +29,6 @@ double myPowCore(double x, int n)
 }
 int main(void)
 {
-
 	system("pause");
 	return 0;
 }

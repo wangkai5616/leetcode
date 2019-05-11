@@ -39,7 +39,6 @@ void dfs(const vector<int>& nums, vector<int> &v, vector<vector<int>> &result)
 		}
 	}
 }
-
 int main(void)
 {
 	system("pause");

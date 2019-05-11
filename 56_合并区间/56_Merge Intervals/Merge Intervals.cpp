@@ -17,6 +17,22 @@ struct Interval {
 	Interval() : start(0), end(0) {}
 	Interval(int s, int e) : start(s), end(e) {}
 };
+vector<vector<int>> merge(vector<vector<int>>& intervals)
+{
+	vector<vector<int>> result;
+	vector<Interval> v;
+	for (int i = 0; i < intervals.size(); ++i)
+		v.push_back(Interval(intervals[i][0], intervals[i][1]));
+	vector<Interval> vI = merge(v);
+	for (int i = 0; i < vI.size(); ++i)
+	{
+		vector<int> v;
+		v.push_back(vI[i].start);
+		v.push_back(vI[i].end);
+		result.push_back(v);
+	}
+	return result;
+}
 // 时间复杂度 O(n1+n2+...)空间复杂度 O(1)
 vector<Interval> merge(vector<Interval>& intervals)
 {
@@ -33,7 +49,7 @@ vector<Interval> insert(vector<Interval>& intervals, Interval newInterval)
 	{
 		//新来的newInterval的肯定大于it指向的值
 		if (newInterval.start > it->end)
-			it++;
+			++it;
 		//新来的newInterval的肯定大于it指向的值
 		//所以，找到了位置，进行插入
 		else if (newInterval.end < it->start)

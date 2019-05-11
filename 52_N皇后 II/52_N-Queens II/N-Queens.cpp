@@ -1,38 +1,27 @@
 #include<iostream>
 #include<vector>
-#include<string>
 using namespace std;
 /*
 n 皇后问题研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并且使皇后彼此之间不能相互攻击。
+给定一个整数 n，返回 n 皇后不同的解决方案的数量。
 */
-//思路：深度优先搜索
-void dfs(vector<int> &C, vector<vector<string>> &result, int row, int n,
-	vector<int> columns, vector<int> main_diag, vector<int> anti_diag);
-vector<vector<string>> solveNQueens(int n)
+void dfs(int row, int n,
+	vector<int> columns, vector<int> &main_diag, vector<int> &anti_diag,int &count);
+int totalNQueens(int n)
 {
 	vector<int> columns(n, 0);//表示已经放置的皇后占据了哪些列
 	vector<int> main_diag(2 * n, 0);//表示已经放置的皇后占据了哪些主对角线
 	vector<int> anti_diag(2 * n, 0);//表示已经放置的皇后占据了哪些副对角线
-	vector<vector<string>> result;
-	vector<int> C(n, 0);//表示第i行皇后所在的列编号
-	dfs(C, result, 0, n, columns, main_diag, anti_diag);
-	return result;
+	int count = 0;//统计最后的如果
+	dfs( 0, n, columns, main_diag, anti_diag,count);
+	return count;
 }
-void dfs(vector<int> &C, vector<vector<string>> &result, int row, int n,
-	vector<int> columns, vector<int> main_diag, vector<int> anti_diag)
+void dfs( int row, int n,
+	vector<int> columns, vector<int> &main_diag, vector<int> &anti_diag,int &count)
 {
 	if (row == n)
 	{
-		vector<string> solution;
-		for (int i = 0; i < n; ++i)
-		{
-			string s(n, '.');
-			for (int j = 0; j < n; ++j)
-				if (j == C[i])
-					s[j] = 'Q';
-			solution.push_back(s);//加的是一行
-		}
-		result.push_back(solution);//加的是整个二维数组
+		count++;
 		return;
 	}
 
@@ -46,11 +35,9 @@ void dfs(vector<int> &C, vector<vector<string>> &result, int row, int n,
 		if (!ok)
 			continue;
 		//目前合法，进行下一行的寻找
-		C[row] = i;
 		columns[i] = main_diag[row + i] = anti_diag[row - i + n] = 1;
-		dfs(C, result, row + 1, n, columns, main_diag, anti_diag);
+		dfs(row + 1, n, columns, main_diag, anti_diag,count);
 		//撤销动作,不论上一列成功与否，进行下一列的判断
-		C[row] = 0;
 		columns[i] = main_diag[row + i] = anti_diag[row - i + n] = 0;
 	}
 }

@@ -24,17 +24,16 @@ int lengthOfLastWord(string s)
 	return length;
 }
 //方法二,不使用容器
-int lengthOfLastWord2(const char *s)
+int lengthOfLastWord(string s) 
 {
-	int length = 0;
-	while (*s)
-	{
-		if (*s++ != ' ')
-			++length;
-		else if (*s && *s != ' ')
-			length = 0;
+	int res = 0;
+	for (int i = 0; i < s.size(); ++i) {
+		if (s[i] != ' ') {
+			if (i != 0 && s[i - 1] == ' ') res = 1;
+			else ++res;
+		}
 	}
-	return length;
+	return res;
 }
 int main(void)
 {

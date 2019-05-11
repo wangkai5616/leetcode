@@ -4,33 +4,32 @@
 #include<string>
 #include<algorithm>
 using namespace std;
-
-int jump(vector<int>& nums)
+vector<vector<int>> permuteUnique(vector<int> nums)
 {
-	int length = nums.size();
-	if (length == 1)
-		return 0;
-	int step = 0;
-	int start = 0, end = 0;
-	while (start <= end)
+	vector<vector<int>> result;
+
+}
+void dfs(vector<vector<int>> &result, vector<int> nums, int k)
+{
+	if (k == nums.size() - 1)
 	{
-		++step;
-		int oldEnd = end;
-		for (int i = start; i <= oldEnd; ++i)
+		result.push_back(nums);
+		return;
+	}
+	vector<int> v;
+	for (int i = k; i < nums.size(); ++i)
+	{
+		if (i != k && find(v.begin(), v.end(), nums[i]) != v.end())
+			continue;
+		else
 		{
-			int newRight = i + nums[i];
-			if (newRight >= length - 1)
-				return step;
-			if (newRight > end)
-				end = newRight;
+			v.push_back(nums[i]);
 		}
-		start = oldEnd + 1;
 	}
 }
 int main(void)
 {
-	char c = 'a' + 2;
-	cout << c << endl;
+
 	system("pause");
 	return 0;
 }

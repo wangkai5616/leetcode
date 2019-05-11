@@ -13,7 +13,7 @@ using namespace std;
 [2,1,1]
 ]
 */
-//思路：46题的变形
+//思路：交换
 void permuteUnique(vector<vector<int>> &result,
 	vector<int> nums, int i);
 vector<vector<int>> permuteUnique(vector<int> nums)

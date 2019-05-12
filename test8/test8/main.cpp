@@ -1,40 +1,44 @@
 #include<iostream>
+#include<string>
+#include<algorithm>
 #include<memory>
 using namespace std;
-struct ListNode {
-	int val;
-	ListNode *next;
-	ListNode(int x) : val(x), next(NULL) {}
-};
-ListNode* rotateRight(ListNode* head, int k)
+string addBinary(string a, string b)
 {
-	if (head == nullptr || head->next==nullptr || k < 1)
-		return 0;
-	ListNode *node = head;
-	int length = 1;
-	while (node->next != nullptr)
+	if (a.size() == 0)
+		return b;
+	if (b.size() == 0)
+		return a;
+	string result;
+	auto iter1 = a.rbegin();
+	auto iter2 = b.rbegin();
+	int value = 0;
+	int jin = 0;
+	int m = 0, n = 0;
+	while (iter1 != a.rend() || iter2 != b.rend())
 	{
-		node = node->next;
-		++length;
+		m = (iter1 != a.rend()) ? (*iter1-'0') : 0;
+		n = (iter2 != b.rend()) ? (*iter2-'0') : 0;
+		value = (jin + m + n) % 2;
+		jin = (jin + m + n) / 2;
+		result.push_back(value + '0');
+		++iter1;
+		++iter2;
 	}
-	int count = length - k / length - 1;
-	if (count == 0)
-		return head;
-	ListNode *node1 = head;
-	while (count--)
-		node1 = node1->next;
-	node->next = head;
-	node = node1->next;
-	node->next = nullptr;
-	return node;	
+	if (jin == 1)
+		result.push_back('1');
+	reverse(result.begin(), result.end());
+	return result;
 }
-int main()
+int main(void)
 {
-	
+	string s1 = "1";
+	string s2 = "11";
+	string result = addBinary(s1, s2);
+	cout << result << endl;
 	system("pause");
 	return 0;
 }
-
 
 
 

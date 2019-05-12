@@ -1,36 +1,36 @@
 #include<iostream>
 #include<memory>
 using namespace std;
-struct Node
-{
-	Node(int value)
-		:_value(value)
-	{
-		cout << "Node()" << endl;
-	}
-	~Node()
-	{
-		cout << "~Node()" << endl;
-	}
-	shared_ptr<Node> _prev;
-	shared_ptr<Node> _next;
-	int _value;
+struct ListNode {
+	int val;
+	ListNode *next;
+	ListNode(int x) : val(x), next(NULL) {}
 };
-void Test2()
+ListNode* rotateRight(ListNode* head, int k)
 {
-	shared_ptr<Node> sp1(new Node(1));
-	shared_ptr<Node> sp2(new Node(2));
-	cout << sp1.use_count() << endl;
-	cout << sp2.use_count() << endl;
-	sp1->_next = sp2;
-	sp2->_prev = sp1;
-	cout << sp1.use_count() << endl;
-	cout << sp2.use_count() << endl;
+	if (head == nullptr || head->next==nullptr || k < 1)
+		return 0;
+	ListNode *node = head;
+	int length = 1;
+	while (node->next != nullptr)
+	{
+		node = node->next;
+		++length;
+	}
+	int count = length - k / length - 1;
+	if (count == 0)
+		return head;
+	ListNode *node1 = head;
+	while (count--)
+		node1 = node1->next;
+	node->next = head;
+	node = node1->next;
+	node->next = nullptr;
+	return node;	
 }
-
 int main()
 {
-	Test2();
+	
 	system("pause");
 	return 0;
 }

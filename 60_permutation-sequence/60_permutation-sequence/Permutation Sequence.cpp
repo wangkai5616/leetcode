@@ -29,7 +29,7 @@ void getPermutationCore(string s, int i, int &count, int k, string &result)
 		if (count == k)
 		{
 			result = s;
-			count++;
+			return;
 		}
 		else
 		{

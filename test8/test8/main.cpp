@@ -1,31 +1,41 @@
 #include<iostream>
-#include<vector>
-#include<stack>
-#include<string>
-#include<algorithm>
+#include<memory>
 using namespace std;
-int lengthOfLastWord(string s)
+struct Node
 {
-	int length = 0;
-	auto iter = s.begin();
-	while (iter != s.end())
+	Node(int value)
+		:_value(value)
 	{
-		if (*iter != ' ')
-			++length;
-		else if (*iter == ' ' && (++iter != s.end()))
-		{
-			length = 0;
-			--iter;
-		}
-		++iter;
+		cout << "Node()" << endl;
 	}
-	return length;
-}
-int main(void)
+	~Node()
+	{
+		cout << "~Node()" << endl;
+	}
+	shared_ptr<Node> _prev;
+	shared_ptr<Node> _next;
+	int _value;
+};
+void Test2()
 {
-	string s = "h w";
-	cout << lengthOfLastWord(s) << endl;
+	shared_ptr<Node> sp1(new Node(1));
+	shared_ptr<Node> sp2(new Node(2));
+	cout << sp1.use_count() << endl;
+	cout << sp2.use_count() << endl;
+	sp1->_next = sp2;
+	sp2->_prev = sp1;
+	cout << sp1.use_count() << endl;
+	cout << sp2.use_count() << endl;
+}
+
+int main()
+{
+	Test2();
 	system("pause");
 	return 0;
 }
+
+
+
+
 

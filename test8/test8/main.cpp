@@ -1,41 +1,35 @@
 #include<iostream>
 #include<string>
+#include<stack>
 #include<algorithm>
 #include<memory>
 using namespace std;
-string addBinary(string a, string b)
+string simplifyPath(string path)
 {
-	if (a.size() == 0)
-		return b;
-	if (b.size() == 0)
-		return a;
+	stack<string> ss;
 	string result;
-	auto iter1 = a.rbegin();
-	auto iter2 = b.rbegin();
-	int value = 0;
-	int jin = 0;
-	int m = 0, n = 0;
-	while (iter1 != a.rend() || iter2 != b.rend())
+	if (path.size() == 0 || path[0] != '/')
+		return result;
+	string s;
+	for (int i = 1; i < path.size(); ++i)
 	{
-		m = (iter1 != a.rend()) ? (*iter1-'0') : 0;
-		n = (iter2 != b.rend()) ? (*iter2-'0') : 0;
-		value = (jin + m + n) % 2;
-		jin = (jin + m + n) / 2;
-		result.push_back(value + '0');
-		++iter1;
-		++iter2;
+		if (path[i] == '/')
+		{
+			if (s.size() > 0)
+				ss.push(s);
+		}
+			else if (path[i] == '.')
+			{
+
+			}
+
+		
+
 	}
-	if (jin == 1)
-		result.push_back('1');
-	reverse(result.begin(), result.end());
-	return result;
 }
 int main(void)
 {
-	string s1 = "1";
-	string s2 = "11";
-	string result = addBinary(s1, s2);
-	cout << result << endl;
+	
 	system("pause");
 	return 0;
 }

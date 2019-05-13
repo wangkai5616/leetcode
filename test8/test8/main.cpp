@@ -1,31 +1,34 @@
 #include<iostream>
 #include<string>
 #include<stack>
+#include<vector>
 #include<algorithm>
 #include<memory>
 using namespace std;
-string simplifyPath(string path)
+void setZeroes(vector<vector<int>>& matrix)
 {
-	stack<string> ss;
-	string result;
-	if (path.size() == 0 || path[0] != '/')
-		return result;
-	string s;
-	for (int i = 1; i < path.size(); ++i)
+	int m = matrix.size();
+	int n = matrix[0].size();
+	vector<int> row(m, 0);
+	vector<int> col(n, 0);
+	for (int i = 0; i < m; ++i)
 	{
-		if (path[i] == '/')
+		for (int j = 0; j < n; ++j)
 		{
-			if (s.size() > 0)
-				ss.push(s);
-		}
-			else if (path[i] == '.')
+			if (matrix[i][j] == 0)
 			{
-
+				row[i] = 1;
+				col[j] = 1;
 			}
-
-		
-
+		}
 	}
+	for (int i = 0; i < m; ++i)
+		for (int j = 0; j < n; ++j)
+		{
+			if (row[i] == 1 || col[j] == 1)
+				matrix[i][j] = 0;
+		}
+	return;
 }
 int main(void)
 {

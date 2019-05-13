@@ -5,40 +5,41 @@
 #include<algorithm>
 #include<memory>
 using namespace std;
-void dfs(vector<vector<int>> &result, const vector<int> &v
-	, vector<int> temp, int k, int h);
-vector<vector<int>> combine(int n, int k)
+bool exist(vector<vector<char>>& board, string word)
 {
-	vector<vector<int>> result;
-	vector<int> v;
-	for (int i = 1; i <= n; ++i)
-		v.push_back(i);
-	vector<int> temp;
-	dfs(result, v, temp, 0, k);
-	return result;
+	if (word.size() == 0)
+		return true;
+	int row = board.size();
+	int col = board[0].size();
+	vector<vector<bool>> visited(row, vector<bool>(col, false));
+	for (int i = 0; i < row; ++i)
+	{
+		for (int j = 0; j < col; ++j)
+			if (dfs(board, word, i + 1, j, row, col, 0, visited))
+				return true;
+	}
+	return false;
 }
-void dfs(vector<vector<int>> &result, const vector<int> &v
-	, vector<int> temp, int k, int h)
+bool dfs(const vector<vector<char>>& board, const string &word,
+	int i,int j,int m, int n, int k, vector<vector<bool>> &visited)
 {
-	if (temp.size() == h)
+	if (k == word.size())
+		return true;
+	bool b = false;
+	if (i >= 0 && i < m && j >= 0 && j < n && board[i][j] == word[k] && !visited[i][j])
 	{
-		result.push_back(temp);
-		for (int i = 0; i < temp.size(); ++i)
-			cout << temp[i] << "	";
-		cout << endl;
-		return;
+		visited[i][j] = true;
+		bool b= dfs(board, word, i + 1, j, m, n, k + 1, visited) ||
+			dfs(board, word, i - 1, j, m, n, k + 1, visited) ||
+			dfs(board, word, i, j + 1, m, n, k + 1, visited) ||
+			dfs(board, word, i, j - 1, m, n, k + 1, visited);
+		visited[i][j] = false;
 	}
-	for (int i = k; i < v.size(); ++i)
-	{
-		temp.push_back(v[i]);
-		dfs(result, v, temp, k + 1, h);
-		temp.pop_back();
-	}
+	return b;
 }
 int main(void)
 {
 	vector<vector<int>> result;
-	result = combine(2,2);
 	system("pause");
 	return 0;
 }

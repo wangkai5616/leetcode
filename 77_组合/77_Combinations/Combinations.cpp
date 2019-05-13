@@ -15,7 +15,7 @@ vector<vector<int>> combine(int n, int k)
 	combineCore(result, v, 1, n, k);
 	return result;
 }
-void combineCore(vector<vector<int>> &result, vector<int> v, int i, int n, int k)
+void combineCore(vector<vector<int>> &result, vector<int> &v, int i, int n, int k)
 {
 	if (v.size() == k)
 	{

@@ -5,41 +5,40 @@
 #include<algorithm>
 #include<memory>
 using namespace std;
-string minWindow(string s, string t)
+void dfs(vector<vector<int>> &result, const vector<int> &v
+	, vector<int> temp, int k, int h);
+vector<vector<int>> combine(int n, int k)
 {
-	if (s.size() == 0 || t.size() == 0 || s.size() < t.size())
-		return "";
-	//用于保存s中出现字符串t中的某个字符的数量
-	int *appeared = new int[256]();
-	//用于保存字符串t中出现的某个字符的数量
-	int *expected = new int[256]();
-	for (int i = 0; i < t.size(); ++i)
-		expected[t[i]]++;
-	int minWidth = INT_MAX;
-	int minStart = 0;
-	int num = 0;
-	int winStrat = 0;
-	for (int winEnd = 0; winEnd < s.size(); ++winEnd)
+	vector<vector<int>> result;
+	vector<int> v;
+	for (int i = 1; i <= n; ++i)
+		v.push_back(i);
+	vector<int> temp;
+	dfs(result, v, temp, 0, k);
+	return result;
+}
+void dfs(vector<vector<int>> &result, const vector<int> &v
+	, vector<int> temp, int k, int h)
+{
+	if (temp.size() == h)
 	{
-		if (expected[s[winEnd]]>0)
-		{
-			appeared[s[winEnd]]++;
-			if (appeared[s[winEnd]] <= expected[s[winEnd]])
-				++num;
-		}
-		if (num == t.size())
-		{
-			while (appeared[s[winStrat]]>expected[s[winStrat]])
-			{
-				appeared[s[winStrat]--];
-				++winStrat;
-			}
-		}
+		result.push_back(temp);
+		for (int i = 0; i < temp.size(); ++i)
+			cout << temp[i] << "	";
+		cout << endl;
+		return;
+	}
+	for (int i = k; i < v.size(); ++i)
+	{
+		temp.push_back(v[i]);
+		dfs(result, v, temp, k + 1, h);
+		temp.pop_back();
 	}
 }
 int main(void)
 {
-	
+	vector<vector<int>> result;
+	result = combine(2,2);
 	system("pause");
 	return 0;
 }

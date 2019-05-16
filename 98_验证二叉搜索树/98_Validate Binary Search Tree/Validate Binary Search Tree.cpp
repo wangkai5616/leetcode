@@ -17,33 +17,15 @@ struct TreeNode {
 	TreeNode(int x) : val(x), left(NULL), right(NULL) {}	
 };
 //二叉搜索树的中序遍历是递增的
-bool isValidBST(TreeNode* root)
+bool isValidBST(TreeNode *root) 
 {
-	int minValue = INT_MIN;
-	if (root != nullptr)
-	{
-		stack<TreeNode*> st;
-		while (!st.empty() || root != nullptr)
-		{
-			if (root != nullptr)
-			{
-				if (root->val == INT_MIN)
-					root->val = INT_MIN + 1;
-				st.push(root);
-				root = root->left;
-			}
-			else
-			{
-				root = st.top();
-				if (root->val <= minValue)
-					return false;
-				minValue = root->val;
-				st.pop();
-				root = root->right;
-			}
-		}
-	}
-	return true;
+	return isValidBST(root, LONG_MIN, LONG_MAX);
+}
+bool isValidBST(TreeNode *root, long mn, long mx) 
+{
+	if (!root) return true;
+	if (root->val <= mn || root->val >= mx) return false;
+	return isValidBST(root->left, mn, root->val) && isValidBST(root->right, root->val, mx);
 }
 int main(void)
 {

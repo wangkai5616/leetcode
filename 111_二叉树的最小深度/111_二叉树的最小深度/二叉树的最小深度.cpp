@@ -33,6 +33,13 @@ int minDepthCore(TreeNode* root, bool hasbrother)
 	return 1 + min(minDepthCore(root->left, root->right != nullptr),
 		minDepthCore(root->right, root->left != nullptr));
 }
+//自己的做法
+int minDepth(TreeNode* root) {
+	if (!root) return 0;
+	if (!root->left) return 1 + minDepth(root->right);
+	if (!root->right) return 1 + minDepth(root->left);
+	return 1 + min(minDepth(root->left), minDepth(root->right));
+}
 int main(void)
 {
 	system("pause");

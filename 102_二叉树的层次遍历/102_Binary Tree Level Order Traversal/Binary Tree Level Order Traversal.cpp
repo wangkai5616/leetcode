@@ -27,24 +27,24 @@ vector<vector<int>> levelOrder(TreeNode* root)
 		return result;
 	//用next队列保存current队列的左右孩子节点，然后将这两个队列交换
 	//重复执行这个步骤
-	queue<TreeNode*>current, next;
+	queue<TreeNode*> q;
 	vector<int> level;//每一层的元素
-	current.push(root);
-	while (!current.empty())
+	q.push(root);
+	while (!q.empty())
 	{
-		while (!current.empty())
+		int len = q.size();
+		while (len--)
 		{
-			TreeNode *node = current.front();
-			current.pop();
+			TreeNode *node = q.front();
+			q.pop();
 			level.push_back(node->val);
 			if (node->left != nullptr)
-				next.push(node->left);
+				q.push(node->left);
 			if (node->right != nullptr)
-				next.push(node->right);
+				q.push(node->right);
 		}
 		result.push_back(level);
 		level.clear();
-		swap(next, current);
 	}
 	return result;
 }

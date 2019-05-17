@@ -36,6 +36,7 @@ void pathSumCore(TreeNode* root, int gap, vector<int> &current,
 	pathSumCore(root->right, gap - root->val, current, result);
 	current.pop_back();
 }
+
 int main(void)
 {
 	system("pause");

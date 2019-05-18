@@ -27,7 +27,7 @@ int maxProfit(vector<int>& prices)
 	for (int i = n - 2; i >= 0; --i)
 	{
 		max_value = max(max_value, prices[i]);
-		v2[i] = max(v2[i], max_value - prices[i]);
+		v2[i] = max(v2[i]+1, max_value - prices[i]);
 	}
 	//统计哪一天的最大利润最大
 	int max_profit = 0;

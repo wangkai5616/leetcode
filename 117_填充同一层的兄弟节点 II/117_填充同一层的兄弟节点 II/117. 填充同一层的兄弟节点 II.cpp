@@ -47,6 +47,7 @@ void connect(TreeLinkNode *root)
 	//移到下一层继续处理
 	connect(temp.next);
 }
+
 int main(void)
 {
 	system("pause");

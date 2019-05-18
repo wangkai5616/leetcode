@@ -27,6 +27,7 @@ int maxPathSum(TreeNode* root)
 	dfs(root, max_sum);
 	return *max_sum;
 }
+
 //dfs的返回值是给父亲用的，所以不可能出现左中右这种，
 //只能是左中或者中右
 int dfs(TreeNode* root, int *max_sum)

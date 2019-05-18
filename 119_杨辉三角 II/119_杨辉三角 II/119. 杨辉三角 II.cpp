@@ -12,7 +12,7 @@ vector<int> getRow(int rowIndex)
 	for (int i = 0; i <= rowIndex; ++i)
 	{
 		//result存放的是当前行的元素，计算下一行的时候可以进行利用
-		for (int j = i - 1; j > 0; --j)
+		for (int j = i - 1; j > 0; --j)//从后往前计算，数据不会被扰乱
 			result[j] = result[j - 1] + result[j];
 		result.push_back(1);//每次总要在末尾添加1
 	}

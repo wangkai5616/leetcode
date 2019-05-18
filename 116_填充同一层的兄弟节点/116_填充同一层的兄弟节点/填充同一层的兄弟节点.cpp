@@ -39,6 +39,7 @@ void connectCore(TreeLinkNode *root, TreeLinkNode *brother)
 	else
 		connectCore(root->right, nullptr);
 }
+
 int main(void)
 {
 	system("pause");

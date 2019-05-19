@@ -14,6 +14,7 @@ using namespace std;
 unordered_map<int, bool> used 记录每个元素是否使用，对每个元素，
 以该元素为中心，往左右扩张，直到不连续为止，记录下最长的长
 */
+
 // 时间复杂度 O(n)，空间复杂度 O(n)
 int longestConsecutive(vector<int>& nums)
 {

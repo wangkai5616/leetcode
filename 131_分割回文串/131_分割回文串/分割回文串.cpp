@@ -51,6 +51,7 @@ bool isPail(string s)
 			return false;
 	return true;
 }
+
 int main(void)
 {
 	system("pause");

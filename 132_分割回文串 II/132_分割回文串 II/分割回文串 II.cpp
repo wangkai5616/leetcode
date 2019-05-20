@@ -34,6 +34,7 @@ int minCut(string s)
 	}
 	return v[0];
 }
+
 int main(void)
 {
 	system("pause");

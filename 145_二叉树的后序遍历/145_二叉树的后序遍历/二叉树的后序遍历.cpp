@@ -2,6 +2,7 @@
 #include<vector>
 #include<stack>
 using namespace std;
+
 /*
 给定一个二叉树，返回它的后序遍历。
 不使用递归算法

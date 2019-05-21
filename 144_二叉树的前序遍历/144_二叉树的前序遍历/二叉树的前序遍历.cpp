@@ -31,6 +31,7 @@ vector<int> preorderTraversal(TreeNode* root)
 	}
 	return result;
 }
+
 int main(void)
 {
 	system("pause");

@@ -32,6 +32,7 @@ int evalRPN(vector<string>& tokens)
 	}
 	return s.top();
 }
+
 //判断是否是操作数
 bool isOperator(string s)
 {

@@ -39,6 +39,7 @@ void reorderList(ListNode* head)
 	}
 	head1->next = head2;
 }
+
 //·´×ªÁ´±í
 ListNode *reverse(ListNode *head)
 {

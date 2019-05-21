@@ -5,6 +5,7 @@ struct ListNode {
 	ListNode *next;
 	ListNode(int x) : val(x), next(NULL) {}
 };
+
 ListNode* findInsertPos(ListNode* head, int value);
 ListNode* insertionSortList1(ListNode* head)
 {

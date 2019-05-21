@@ -7,49 +7,44 @@ struct ListNode {
 	ListNode(int x) : val(x), next(NULL) {}
 };
 //思路：归并排序，时间复杂度 O(nlogn)，空间复杂度 O(1)
-ListNode *mergeTwoLists(ListNode *l1, ListNode *l2);
-ListNode* sortList(ListNode* head)
+
+ListNode *sortList(ListNode *head)
 {
 	if (head == nullptr || head->next == nullptr)
 		return head;
-	ListNode *slow = head;//慢指针
-	ListNode *fast = head;//快指针
-	while (fast->next != nullptr && fast->next->next != nullptr)
+	ListNode *slow = head;
+	ListNode *fast = head;
+	ListNode *pre = head;
+	while (fast && fast->next)
 	{
-		fast = fast->next->next;
+		pre = slow;
 		slow = slow->next;
+		fast = fast->next->next;
 	}
-	//断开链表
-	fast = slow;
-	slow = slow->next;
-	fast->next = nullptr;
-	//前半段排序
-	ListNode *l1 = sortList(head);
-	//后半段排序
-	ListNode *l2 = sortList(slow);
-	return mergeTwoLists(l1, l2);
+	pre->next = nullptr;
+	return merge(sortList(head), sortList(slow));
 }
-//合并两个有序链表
-ListNode *mergeTwoLists(ListNode *l1, ListNode *l2)
+ListNode *merge(ListNode *l1, ListNode *l2)
 {
-	ListNode temp(-1);
-	ListNode *node = &temp;
-	for (; l1 != nullptr || l2 != nullptr; node = node->next)
+	ListNode *dummy = new ListNode(-1);
+	ListNode *cur = dummy;
+	while (l1 && l2)
 	{
-		int value1 = l1 == nullptr ? INT_MAX : l1->val;
-		int value2 = l2 == nullptr ? INT_MAX : l2->val;
-		if (value1 <= value2)
+		if (l1->val < l2->val)
 		{
-			node->next = l1;
+			cur->next = l1;
 			l1 = l1->next;
 		}
 		else
 		{
-			node->next = l2;
+			cur->next = l2;
 			l2 = l2->next;
 		}
+		cur = cur->next;
 	}
-	return temp.next;
+	if (l1) cur->next = l1;
+	if (l2) cur->next = l2;
+	return dummy->next;
 }
 int main(void)
 {

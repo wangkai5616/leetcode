@@ -6,6 +6,7 @@ struct ListNode {
 	ListNode *next;
 	ListNode(int x) : val(x), next(NULL) {}
 };
+
 bool hasCycle(ListNode *head)
 {
 	if (head == nullptr || head->next == nullptr || head->next->next == nullptr)

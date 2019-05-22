@@ -12,7 +12,6 @@ ListNode *detectCycle(ListNode *head)
 		return nullptr;
 	ListNode *n1 = head->next;//ÂýÖ¸Õë
 	ListNode *n2 = head->next->next;//¿ìÖ¸Õë
-	n2 = head;
 	while (n1 != n2)
 	{
 		if (n2->next == nullptr || n2->next->next == nullptr)
@@ -20,6 +19,7 @@ ListNode *detectCycle(ListNode *head)
 		n1 = n1->next;
 		n2 = n2->next->next;
 	}
+	n2 = head;
 	while (n1 != n2)
 	{
 		n1 = n1->next;

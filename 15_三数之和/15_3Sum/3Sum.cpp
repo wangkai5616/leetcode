@@ -7,43 +7,28 @@ void print(const vector<vector<int>> &v);
 先排好序，从头至尾，先固定一个元素，然后求解剩下的两个
 元素是通过左右加逼得到的，复杂度为O(n^2)
 */
-vector<vector<int>> threeSum(vector<int>& nums)
+vector<vector<int>> threeSum(vector<int>& nums) 
 {
-	vector<vector<int>> result;
-	if (nums.size() < 3)
-		return result;
-	int target = 0;
+	vector<vector<int>> res;
 	sort(nums.begin(), nums.end());
-	vector<int>::iterator begin = nums.begin();
-	vector<int>::iterator end = nums.end() - 2;
-	for (; begin < end; ++begin)
-	{
-		int need = target - *begin;
-		vector<int>::iterator start = begin + 1;
-		vector<int>::iterator over = nums.end() - 1;
-		while (start < over)
-		{
-			if (*start + *over < need)
-				++start;
-			else if (*start + *over > need)
-				--over;
-			else
-			{
-				result.push_back({ *begin,*start,*over });
-				++start;
-				--over;
+	if (nums.empty() || nums.back() < 0 || nums.front() > 0) return{};
+	for (int k = 0; k < nums.size(); ++k) {
+		if (nums[k] > 0) break;
+		if (k > 0 && nums[k] == nums[k - 1]) continue;
+		int target = 0 - nums[k];
+		int i = k + 1, j = nums.size() - 1;
+		while (i < j) {
+			if (nums[i] + nums[j] == target) {
+				res.push_back({ nums[k], nums[i], nums[j] });
+				while (i < j && nums[i] == nums[i + 1]) ++i;
+				while (i < j && nums[j] == nums[j - 1]) --j;
+				++i; --j;
 			}
+			else if (nums[i] + nums[j] < target) ++i;
+			else --j;
 		}
 	}
-	//必须要先排序，因为unique只判断临近的
-	sort(result.begin(), result.end());
-	/*
-	unique并不会改变[first,last)的元素个数，有一些残留数据会留下来。可以用
-	erase函数去除。
-	unique会返回一个迭代器指向新区间的尾端，新区间之内不含相邻的重复元素
-	*/
-	result.erase(unique(result.begin(), result.end()), result.end());
-	return result;
+	return res;
 }
 void print(const vector<vector<int>> &v)
 {

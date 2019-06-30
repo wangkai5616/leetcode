@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="208_实现 Trie (前缀树).cpp">
+    <ClCompile Include="394_字符串解码.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

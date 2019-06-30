@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B2B9B302-2F88-4A21-AF14-8B812A067382}</ProjectGuid>
-    <RootNamespace>My208_实现Trie前缀树</RootNamespace>
+    <ProjectGuid>{B5AAF285-BC21-445E-A51C-1E7D85128E40}</ProjectGuid>
+    <RootNamespace>My394_字符串解码</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="208_实现 Trie (前缀树).cpp" />
+    <ClCompile Include="394_字符串解码.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

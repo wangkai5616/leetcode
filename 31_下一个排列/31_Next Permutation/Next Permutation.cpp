@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+//以149632为例进行分析
 void nextPermutation(vector<int>& nums)
 {
 	int k = -1;

@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{68969D36-E64D-4880-9FAD-7D9928FED0EF}</ProjectGuid>
-    <RootNamespace>My152_乘积最大子序列</RootNamespace>
+    <ProjectGuid>{DFE6CD86-F6AD-4E56-98D6-924DF3E7E5C2}</ProjectGuid>
+    <RootNamespace>My207_课程表</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="152_乘积最大子序列.cpp" />
+    <ClCompile Include="207_课程表.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

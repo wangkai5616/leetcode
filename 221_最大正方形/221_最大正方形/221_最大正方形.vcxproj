@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C28062CF-E0A9-45A1-A1FB-55E3CDE8168B}</ProjectGuid>
-    <RootNamespace>My337_打家劫舍III</RootNamespace>
+    <ProjectGuid>{0FC11EE4-B721-4A4E-AE34-09103DB6AAA2}</ProjectGuid>
+    <RootNamespace>My221_最大正方形</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="337_打家劫舍 III.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

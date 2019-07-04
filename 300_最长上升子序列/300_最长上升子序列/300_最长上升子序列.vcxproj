@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E4A41121-98A1-43FB-AB31-37A83EC7F734}</ProjectGuid>
-    <RootNamespace>My253_会议室II</RootNamespace>
+    <ProjectGuid>{A34EC4D7-A563-4C04-AB52-091BE1F6EAD0}</ProjectGuid>
+    <RootNamespace>My300_最长上升子序列</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="253_会议室 II.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

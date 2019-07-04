@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C07289E4-2F05-41E0-B81C-54E48B694B7F}</ProjectGuid>
-    <RootNamespace>My543_二叉树的直径</RootNamespace>
+    <ProjectGuid>{5F0A000A-ED09-4566-99AB-AB22EA11FB99}</ProjectGuid>
+    <RootNamespace>My538_把二叉搜索树转换为累加树</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="543_二叉树的直径.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

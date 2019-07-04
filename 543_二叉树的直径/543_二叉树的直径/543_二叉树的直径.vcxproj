@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A34EC4D7-A563-4C04-AB52-091BE1F6EAD0}</ProjectGuid>
-    <RootNamespace>My300_最长上升子序列</RootNamespace>
+    <ProjectGuid>{C07289E4-2F05-41E0-B81C-54E48B694B7F}</ProjectGuid>
+    <RootNamespace>My543_二叉树的直径</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="300_最长上升子序列.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

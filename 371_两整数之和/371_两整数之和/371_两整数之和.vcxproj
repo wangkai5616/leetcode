@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9BB8E380-0D07-4EED-AE77-E027939D57A3}</ProjectGuid>
-    <RootNamespace>My347_前K个高频元素</RootNamespace>
+    <ProjectGuid>{38A87AA7-E350-4156-9DE6-1E0EFAF30973}</ProjectGuid>
+    <RootNamespace>My371_两整数之和</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="347_前K个高频元素.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

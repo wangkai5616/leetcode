@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E44B345C-13B1-4368-9965-B0D2A3B2DFBE}</ProjectGuid>
-    <RootNamespace>My338_比特位计数</RootNamespace>
+    <ProjectGuid>{9BB8E380-0D07-4EED-AE77-E027939D57A3}</ProjectGuid>
+    <RootNamespace>My347_前K个高频元素</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="338_比特位计数.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{38A87AA7-E350-4156-9DE6-1E0EFAF30973}</ProjectGuid>
-    <RootNamespace>My371_两整数之和</RootNamespace>
+    <ProjectGuid>{B8267909-EE7F-4232-A638-250993C22A6C}</ProjectGuid>
+    <RootNamespace>My350_两个数组的交集II</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="371_两整数之和.cpp" />
+    <ClCompile Include="350_两个数组的交集 II.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

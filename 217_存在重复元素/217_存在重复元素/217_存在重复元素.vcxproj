@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{994802D5-542E-4AE4-9312-A271F4A3E246}</ProjectGuid>
-    <RootNamespace>My328_奇偶链表</RootNamespace>
+    <ProjectGuid>{A7BD6BFC-6CAD-4F42-9C93-15C017AE75CF}</ProjectGuid>
+    <RootNamespace>My217_存在重复元素</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="328_奇偶链表.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

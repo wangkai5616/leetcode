@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{34A442E5-0ACF-4567-B1A4-8370D4748857}</ProjectGuid>
-    <RootNamespace>My334_递增的三元子序列</RootNamespace>
+    <ProjectGuid>{994802D5-542E-4AE4-9312-A271F4A3E246}</ProjectGuid>
+    <RootNamespace>My328_奇偶链表</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="334_递增的三元子序列.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

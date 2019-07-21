@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3F2B1AAF-B93C-4423-AD6B-E292FC61FDEF}</ProjectGuid>
-    <RootNamespace>My210_课程表II</RootNamespace>
+    <ProjectGuid>{B4BA976C-68E4-4A2E-BB9C-D2190C0B545D}</ProjectGuid>
+    <RootNamespace>My179_最大数</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="210_课程表 II.cpp" />
+    <ClCompile Include="179_最大数.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

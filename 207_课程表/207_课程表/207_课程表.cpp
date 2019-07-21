@@ -18,6 +18,7 @@ bool canFinish(int numCourses, vector<vector<int>>& prerequisites)
 	vector<int> in(numCourses);
 	for (auto a : prerequisites)
 	{
+		//[3,2] 2->3
 		graph[a[1]].push_back(a[0]);
 		++in[a[0]];
 	}

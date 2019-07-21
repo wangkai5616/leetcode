@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A7BD6BFC-6CAD-4F42-9C93-15C017AE75CF}</ProjectGuid>
-    <RootNamespace>My217_存在重复元素</RootNamespace>
+    <ProjectGuid>{3F2B1AAF-B93C-4423-AD6B-E292FC61FDEF}</ProjectGuid>
+    <RootNamespace>My210_课程表II</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="217_存在重复元素.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

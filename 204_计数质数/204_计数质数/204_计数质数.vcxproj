@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{82DE774F-4A8D-4A71-94A2-5D0D50DF5F77}</ProjectGuid>
-    <RootNamespace>My162_寻找峰值</RootNamespace>
+    <ProjectGuid>{C76DB3E7-B702-4BD8-8230-2BE57BE25F84}</ProjectGuid>
+    <RootNamespace>My204_计数质数</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="162_寻找峰值.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

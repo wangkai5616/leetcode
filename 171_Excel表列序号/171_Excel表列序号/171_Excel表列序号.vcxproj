@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{ADFF2A45-ED9B-402D-B55F-03650E3498E1}</ProjectGuid>
-    <RootNamespace>My191_位1的个数</RootNamespace>
+    <ProjectGuid>{D6E12672-C3AE-498F-B7AC-D146D8E0C239}</ProjectGuid>
+    <RootNamespace>My171_Excel表列序号</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="191_位1的个数.cpp" />
+    <ClCompile Include="171_Excel表列序号.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

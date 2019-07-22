@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{470DE16C-D5B6-49D6-9BC6-F1D4B9BC5C95}</ProjectGuid>
-    <RootNamespace>My190_颠倒二进制位</RootNamespace>
+    <ProjectGuid>{7E9A4126-5AB0-4CA6-A771-03AA7FDD2A38}</ProjectGuid>
+    <RootNamespace>My127_单词接龙</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="190_颠倒二进制位.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

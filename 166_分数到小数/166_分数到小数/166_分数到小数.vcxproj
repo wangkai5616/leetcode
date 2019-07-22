@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C76DB3E7-B702-4BD8-8230-2BE57BE25F84}</ProjectGuid>
-    <RootNamespace>My204_计数质数</RootNamespace>
+    <ProjectGuid>{23A2B287-B40C-4452-BB8D-E5530E61DD50}</ProjectGuid>
+    <RootNamespace>My166_分数到小数</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="204_计数质数.cpp" />
+    <ClCompile Include="166_分数到小数.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

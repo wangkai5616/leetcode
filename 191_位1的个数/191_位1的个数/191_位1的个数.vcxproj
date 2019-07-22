@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4D05B09D-BEFF-49CC-95C6-EF6B8AB959C9}</ProjectGuid>
-    <RootNamespace>My169_求众数</RootNamespace>
+    <ProjectGuid>{ADFF2A45-ED9B-402D-B55F-03650E3498E1}</ProjectGuid>
+    <RootNamespace>My191_位1的个数</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="169_求众数.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

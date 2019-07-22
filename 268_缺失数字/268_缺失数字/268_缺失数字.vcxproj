@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A5F8FAFD-3152-44AF-BEF0-1924EE265193}</ProjectGuid>
-    <RootNamespace>My287_寻找重复数</RootNamespace>
+    <ProjectGuid>{7DE1B059-C15F-4878-BC02-877EC198AABA}</ProjectGuid>
+    <RootNamespace>My268_缺失数字</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="287_寻找重复数.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

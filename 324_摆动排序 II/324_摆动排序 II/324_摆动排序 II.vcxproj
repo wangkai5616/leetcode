@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DDE67F3C-F79F-4DE7-A92E-D44CA753932D}</ProjectGuid>
-    <RootNamespace>My242_有效的字母异位词</RootNamespace>
+    <ProjectGuid>{55546E3A-34E5-4A33-97FB-3D2608AC3518}</ProjectGuid>
+    <RootNamespace>My324_摆动排序II</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="242_有效的字母异位词.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

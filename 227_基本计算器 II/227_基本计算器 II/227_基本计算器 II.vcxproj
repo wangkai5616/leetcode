@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7DE1B059-C15F-4878-BC02-877EC198AABA}</ProjectGuid>
-    <RootNamespace>My268_缺失数字</RootNamespace>
+    <ProjectGuid>{BB1BF9B2-EBE0-4CE0-8534-4D47CDD1C7A0}</ProjectGuid>
+    <RootNamespace>My227_基本计算器II</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="268_缺失数字.cpp" />
+    <ClCompile Include="227_基本计算器 II.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

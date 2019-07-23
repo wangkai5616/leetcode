@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{55546E3A-34E5-4A33-97FB-3D2608AC3518}</ProjectGuid>
-    <RootNamespace>My324_摆动排序II</RootNamespace>
+    <ProjectGuid>{70DE56D9-D609-4AF5-88E3-8514457B897B}</ProjectGuid>
+    <RootNamespace>My315_计算右侧小于当前元素的个数</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="324_摆动排序 II.cpp" />
+    <ClCompile Include="315_计算右侧小于当前元素的个数.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

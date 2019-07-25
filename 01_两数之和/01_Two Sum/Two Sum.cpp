@@ -3,6 +3,7 @@
 #include<vector>
 #include<map>
 #include<hash_map>
+#include<unordered_map>
 using namespace std;
 /*
 暴力实现：
@@ -57,22 +58,21 @@ vector<int> twoSum2(vector<int>& nums, int target)
 */
 vector<int> twoSum3(vector<int>& nums, int target)
 {
-	vector<int> v;
-	multimap<int, int> map;
+	unordered_map<int, int> m;
+	vector<int> res;
+	for (int i = 0; i < nums.size(); ++i)
+		m[nums[i]] = i;
 	for (int i = 0; i < nums.size(); ++i)
 	{
-		map[nums[i]] = i;
-		//multimap的插入只能用insert()不能用数组
-		map.insert(nums[i], i);
-		int temp = target - nums[i];
-		if (map.find(temp) != map.end() && map[temp] != i)
+		int t = target - nums[i];
+		if (m.count(t) && m[t] != i)
 		{
-			v.push_back(map[nums[i]]);
-			v.push_back(map[temp]);
-			return v;
+			res.push_back(i);
+			res.push_back(m[t]);
+			break;
 		}
 	}
-	return v;
+	return res;
 }
 int main(void)
 {

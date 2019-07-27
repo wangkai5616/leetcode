@@ -15,52 +15,21 @@ struct ListNode {
 	ListNode *next;
 	ListNode(int x) : val(x), next(NULL) {}
 };
-//时间复杂度O(n)
-ListNode* reverseBetween(ListNode* head, int m, int n)
+ListNode *reverseBetween(ListNode *head, int m, int n)
 {
-	if (m == n)
-		return head;
-	ListNode *node = head;
-	ListNode *p = nullptr;
-	int k = n - m;
-	int s = m;
-	//让node节点指向第m个节点，p指向其前一个
-	while (m-- > 1)
+	ListNode *dummy = new ListNode(-1);
+	ListNode *pre = dummy;
+	dummy->next = head;
+	for (int i = 0; i < m - 1; ++i) pre = pre->next;
+	ListNode *cur = pre->next;
+	for (int i = m; i < n; ++i)
 	{
-		p = node;
-		node = node->next;
+		ListNode *t = cur->next;
+		cur->next = t->next;
+		t->next = pre->next;
+		pre->next = t;
 	}
-	ListNode *preNode = node;
-	ListNode *currentNode = node->next;
-	ListNode *nextNode = nullptr;
-	//翻转
-	while (k-- > 0)
-	{
-		nextNode = currentNode->next;
-		currentNode->next = preNode;
-		preNode = currentNode;
-		currentNode = nextNode;
-	}
-	//将第m个节点与第n个节点的下一个节点进行连接
-	node->next = currentNode;
-	//判断m是否为1，也就是判断前面是否有节点，如有，进行连接
-	if (s != 1)
-	{
-		p->next = preNode;
-		return head;
-	}
-	else
-		return preNode;
-}
-
-void printListValue(ListNode *node)
-{
-	while (node != nullptr)
-	{
-		cout << node->val << " ";
-		node = node->next;
-	}
-	cout << endl;
+	return dummy->next;
 }
 int main(void)
 {
@@ -76,7 +45,6 @@ int main(void)
 	//m_node4->next = m_node5;
 
 	m_node6 = reverseBetween(m_node1,1,1);
-	printListValue(m_node6);
 	system("pause");
 	return 0;
 }

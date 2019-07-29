@@ -49,6 +49,7 @@ int ladderLength(string beginWord, string endWord, vector<string>& wordList)
 				newWord[i] = ch;
 				if (wordSet.count(newWord) && newWord == endWord)
 					return pathCnt[word] + 1;
+				//如果pathCnt中已经有了那么不再需要重复加入
 				if (wordSet.count(newWord) && !pathCnt.count(newWord))
 				{
 					q.push(newWord);

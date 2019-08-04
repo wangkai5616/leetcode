@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7166F9A6-2C44-4AE2-9313-708C2C0D11CC}</ProjectGuid>
-    <RootNamespace>My130_被围绕的区域</RootNamespace>
+    <ProjectGuid>{C6B060CD-3F75-438B-BE0A-3CC7DE8E61EC}</ProjectGuid>
+    <RootNamespace>My189_旋转数组</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="130_被围绕的区域.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
